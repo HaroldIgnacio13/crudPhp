@@ -4,7 +4,12 @@ image:
 tasks:
   - name: Start web server
     init: python -m http.server 8000
+    command: gp open index.html
 
 ports:
   - port: 8000
     onOpen: open-preview
+
+vscode:
+  extensions:
+    - felixfbecker.php-debug@1.13.0
